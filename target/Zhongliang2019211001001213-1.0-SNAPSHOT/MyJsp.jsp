@@ -11,12 +11,12 @@
     <title>Title</title>
 </head>
 <body>
-<a href="index.jsp">go to ecjtu</a><!-- method is GET-->
-<form method="post"><!--what is method when we use form?--><!-- its GET , why? default is GET, form data is added in the URL , u can see-->
-<!-- its better to use POST in form , data in not added in the URL -->
-    Name :<input type="text" name="name"><br/>
-    ID :<input type="text" name="id"><br/>
-    <input type="submit" value="Send data server"/>
+<form>
+    UserName :<input type="text" name="username"><br/>
+    password :<input type="text" name="password"><br/>
+    Email :<input type="text" name="email"><br/>
+    Date of Birth :<input type="text" name="Date of Birth"><br/>
+    <input type="submit" value="Register"/>
 </form>
 </body>
 </html>
