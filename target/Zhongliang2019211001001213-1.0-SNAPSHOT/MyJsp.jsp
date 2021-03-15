@@ -11,12 +11,17 @@
     <title>Title</title>
 </head>
 <body>
-<form>
-    UserName :<input type="text" name="username"><br/>
-    password :<input type="text" name="password"><br/>
-    Email :<input type="text" name="email"><br/>
-    Date of Birth :<input type="text" name="Date of Birth"><br/>
-    <input type="submit" value="Register"/>
+<a href="index.jsp">go to ecjtu</a><!-- method is GET-->
+<form method="post"><!--what is method when we use form?--><!-- its GET , why? default is GET, form data is added in the URL , u can see-->
+    <!-- its better to use POST in form , data in not added in the URL -->
+    姓名usename :<input type="text" name="name"><br/>
+    学号id :<input type="text" name="id"><br/>
+    邮箱mailbox:<input type="text" name="URL" size="20" maxlength="50" value="http://" /><br/><br/>
+    您的性别:
+    <input type="radio" name="sex" value="男man"/>男man
+    <input type="radio" name="sex" value="女woman"/>女
+    <input type="radio" name="sex" value="无"/>无<br/><br/>
+    <input type="submit" value="Send data server"/>
 </form>
 </body>
 </html>
