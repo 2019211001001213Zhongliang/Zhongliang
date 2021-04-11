@@ -22,6 +22,8 @@ public class RegisterServlet extends HttpServlet {
         String gender =request.getParameter("gender");
         String birthDate=request.getParameter("birthDate");
 
+
+
         PrintWriter writer = response.getWriter();
         writer.println("<br>username :"+username);
         writer.println("<br> password :"+password);
@@ -30,4 +32,6 @@ public class RegisterServlet extends HttpServlet {
         writer.println("<br> birthDate :"+birthDate);
         writer.close();
     }
+
+
 }
