@@ -1,4 +1,3 @@
-
 <%@include file="header.jsp" %>
 <h2>Welcome to My Online Shop Home Page.</h2> <br>
 <form method= "get" target='_bLank' action="search">
@@ -12,5 +11,7 @@
     <input type="submit" value="Search"/>
 </form>
 <%@include file="footer.jsp" %>
+
+
 
 

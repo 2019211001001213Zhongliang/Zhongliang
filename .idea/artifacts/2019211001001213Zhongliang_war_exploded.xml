@@ -13,6 +13,10 @@
         <element id="directory" name="classes">
           <element id="module-output" name="2019211001001213Zhongliang" />
         </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Maven: com.microsoft.sqlserver:mssql-jdbc:8.2.1.jre8" />
+          <element id="library" level="project" name="Maven: commons-dbutils:commons-dbutils:1.7" />
+        </element>
       </element>
       <element id="directory" name="META-INF">
         <element id="file-copy" path="$PROJECT_DIR$/target/Zhongliang2019211001001213-1.0-SNAPSHOT/META-INF/MANIFEST.MF" />
