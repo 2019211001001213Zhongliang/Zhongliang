@@ -12,7 +12,6 @@ public class LoginServlet extends HttpServlet {
     Connection con = null;
     @Override
     public void init() throws ServletException {
-
         con =(Connection)getServletContext().getAttribute("dbConn");
 
     }
@@ -20,6 +19,7 @@ public class LoginServlet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+//        doPost(request, response);
         request.getRequestDispatcher("WEB-INF/views/login.jsp").forward(request, response);
     }
     @Override
@@ -31,14 +31,12 @@ public class LoginServlet extends HttpServlet {
         try {
             User user= userDao.findByUsernamePassword(con ,name,password);
             if(user!=null){
-
-
-                String rememberMe=request.getParameter("rememberMe");
+                String rememberMe=request.getParameter("remember");
                 if (rememberMe!=null &&rememberMe.equals("1"))
                 {
                     Cookie usernameCookie = new Cookie("cUsername",user.getUsername());
                     Cookie passwordCookie= new Cookie("cPassword",user.getPassword());
-                    Cookie rememberMeCookie = new Cookie("cRememberMe",request.getParameter("rememberMe"));
+                    Cookie rememberMeCookie = new Cookie("cRememberMe",request.getParameter("remember"));
                     usernameCookie.setMaxAge(10);
                     passwordCookie.setMaxAge(10);
                     rememberMeCookie.setMaxAge(10);

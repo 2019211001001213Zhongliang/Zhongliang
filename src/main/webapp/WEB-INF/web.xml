@@ -22,7 +22,7 @@
     </context-param>
     <context-param>
         <param-name>student-id</param-name>
-        <param-value>2019211001001213</param-value>
+        <param-value>2019211001001201</param-value>
     </context-param>
     <context-param>
         <param-name>driver</param-name>
@@ -30,7 +30,7 @@
     </context-param>
     <context-param>
         <param-name>url</param-name>
-        <param-value>jdbc:sqlserver://localhost:1433;DatabaseName=userdb</param-value>
+        <param-value>jdbc:sqlserver://localhost:1433;DatabaseName=userjmy</param-value>
     </context-param>
     <context-param>
         <param-name>Username</param-name>
@@ -41,7 +41,10 @@
         <param-value>123456</param-value>
     </context-param>
 
-
+    <servlet>
+        <servlet-name>anyName</servlet-name>
+        <servlet-class>com.Zhongliang.week2.demo.HelloWorldServlet</servlet-class>
+    </servlet>
     <servlet>
         <servlet-name>LifeCycleServlet</servlet-name>
         <servlet-class>com.Zhongliang.week3.demo.LifeCycleServlet</servlet-class>
@@ -50,6 +53,11 @@
         <servlet-name>RegisterServlet</servlet-name>
         <servlet-class>com.Zhongliang.week3.demo.RegisterServlet</servlet-class>
     </servlet>
+
+    <servlet-mapping>
+        <servlet-name>anyName</servlet-name>
+        <url-pattern>/hello</url-pattern>
+    </servlet-mapping>
     <servlet-mapping>
         <servlet-name>LifeCycleServlet</servlet-name>
         <url-pattern>/life</url-pattern>
@@ -61,7 +69,6 @@
     <welcome-file-list>
         <welcome-file>home</welcome-file>
         <welcome-file>index.jsp</welcome-file>
-
     </welcome-file-list>
 
 </web-app>
