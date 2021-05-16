@@ -18,7 +18,7 @@
     </servlet-mapping>
     <context-param>
         <param-name>name</param-name>
-        <param-value>JieMengyao</param-value>
+        <param-value>Zhongliang</param-value>
     </context-param>
     <context-param>
         <param-name>student-id</param-name>
