@@ -67,7 +67,7 @@ public class Category  implements java.io.Serializable {
         List<Category> list=new ArrayList<Category>();
         String queryString = "select * from  Category";
         try {
-            PreparedStatement	statement = con.prepareStatement(queryString);
+            PreparedStatement statement = con.prepareStatement(queryString);
             ResultSet resultSet = statement.executeQuery();
             while(resultSet.next()){
                 Category c = new Category();
@@ -82,14 +82,15 @@ public class Category  implements java.io.Serializable {
 
         return list;
     }
+
     public static String findByCategoryId(Connection con,int categoryId){
         String categoryName=null;
         try {
             String queryString = "select CategoryName from  Category where CategoryId=?";
-            PreparedStatement	statement = con.prepareStatement(queryString);
+            PreparedStatement statement = con.prepareStatement(queryString);
             statement.setInt(1, categoryId);
             ResultSet resultSet = statement.executeQuery();
-            while(resultSet.next()){
+            if (resultSet.next()){
                 categoryName=resultSet.getString("CategoryName");
             }
         } catch (Exception re) {
