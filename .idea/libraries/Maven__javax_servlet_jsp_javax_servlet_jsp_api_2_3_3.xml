@@ -4,6 +4,7 @@
       <root url="jar://$MAVEN_REPOSITORY$/javax/servlet/jsp/javax.servlet.jsp-api/2.3.3/javax.servlet.jsp-api-2.3.3.jar!/" />
     </CLASSES>
     <JAVADOC>
+      <root url="jar://$USER_HOME$/Downloads/apache-tomcat-8.5.63.zip!/apache-tomcat-8.5.63/lib" />
       <root url="jar://$MAVEN_REPOSITORY$/javax/servlet/jsp/javax.servlet.jsp-api/2.3.3/javax.servlet.jsp-api-2.3.3-javadoc.jar!/" />
     </JAVADOC>
     <SOURCES>
