@@ -6,10 +6,12 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="Zhongliang" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="8">
       <module name="2019211001001213Zhongliang" target="1.8" />
+      <module name="Zhongliang" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

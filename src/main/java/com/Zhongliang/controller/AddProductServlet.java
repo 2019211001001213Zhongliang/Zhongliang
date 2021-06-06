@@ -1,5 +1,5 @@
 package com.Zhongliang.controller;
-import com.Zhongliang.model.Category;
+
 import javax.servlet.*;
 import javax.servlet.http.*;
 import javax.servlet.annotation.*;
@@ -7,10 +7,11 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.sql.Connection;
 import java.sql.SQLException;
-import java.util.List;
 import java.util.logging.Logger;
+
 import com.Zhongliang.dao.ProductDao;
 import com.Zhongliang.model.Product;
+
 
 @WebServlet(name = "AddProductServlet",value = "/admin/addProduct")
 @MultipartConfig(maxFileSize = 16177215)
@@ -32,11 +33,11 @@ public class AddProductServlet extends HttpServlet {
 
     public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
-        Category category = new Category();
-        List<Category> categoryList = category.findAllCategory(con);
-        request.setAttribute("categoryList", categoryList);
-        String path = "/WEB-INF/views/admin/addProduct.jsp";
-        request.getRequestDispatcher(path).forward(request, response);
+//        Locale.Category category = new Category();
+//        List<Category> categoryList = category.findAllCategory(con);
+//        request.setAttribute("categoryList", categoryList);
+//        String path = "/WEB-INF/views/admin/addProduct.jsp";
+//        request.getRequestDispatcher(path).forward(request, response);
 
     }
 

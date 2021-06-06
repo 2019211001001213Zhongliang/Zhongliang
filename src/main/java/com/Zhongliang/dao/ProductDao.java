@@ -1,5 +1,7 @@
 package com.Zhongliang.dao;
+
 import com.Zhongliang.model.Product;
+
 import java.io.InputStream;
 import java.sql.*;
 import java.util.ArrayList;
@@ -238,4 +240,4 @@ public class ProductDao implements  IProductDao{
         System.out.println(imgByte);
         return imgByte;
     }
-}}
+}

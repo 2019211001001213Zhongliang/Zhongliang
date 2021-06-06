@@ -50,10 +50,11 @@ public class UpdateUserServlet extends HttpServlet {
             int i = iUserDao.updateUser(con, user);
             if (i != 0){
                 request.getSession().setAttribute("user",iUserDao.findById(con,id));
-                request.getRequestDispatcher("WEB-INF/views/userinfo.jsp").forward(request, response);
+//                request.getRequestDispatcher("WEB-INF/views/userinfo.jsp").forward(request, response);
+                request.getRequestDispatcher("accountDetails").forward(request, response);
             }else {
                 request.setAttribute("message","update Error!!!");
-                request.getRequestDispatcher("WEB-INF/views/updateUser.jsp").forward(request, response);
+                request.getRequestDispatcher("WEB-INF/views/userinfo.jsp").forward(request, response);
             }
 
         } catch (SQLException throwables) {
