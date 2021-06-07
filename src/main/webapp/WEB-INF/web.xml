@@ -54,6 +54,14 @@
         <servlet-class>com.Zhongliang.week3.demo.RegisterServlet</servlet-class>
     </servlet>
 
+    <filter>
+        <filter-name>ZhongliangFilter</filter-name>
+        <filter-class>com.lab2.ZhongliangFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>ZhongliangFilter</filter-name>
+        <url-pattern>/lab2/welcome.jsp</url-pattern>
+    </filter-mapping>
     <servlet-mapping>
         <servlet-name>anyName</servlet-name>
         <url-pattern>/hello</url-pattern>
